@@ -77,15 +77,13 @@ Warning: Parsing stopped early at token index <n>. Check for unparsed tokens.
 
 ---
 
----
-
 # 🧪 Example Run
 
-Below is an example demonstrating how the scanner and parser operate on a sample C program.
+Below is an example demonstrating how the **scanner** and **parser** operate on a sample C program.
 
-## Input Code
+## 📝 Input Code
 
-c
+```c
 int main() {
     int x, y;
     // This is a single-line comment
@@ -97,11 +95,12 @@ int main() {
     }
     return 0;
 }
+```
 
+The scanner will tokenize this input and generate a structured **token file**.
+Running the parser on this token file will confirm whether the syntax is valid
+according to the supported grammar.
 
-The scanner will tokenize this input and generate a structured token file. Running the parser on this token file will confirm whether the syntax is valid according to the supported grammar.
-
----
 
 # 📄 Token File Format
 
